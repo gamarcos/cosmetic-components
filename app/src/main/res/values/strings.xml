@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Cosmetic Components</string>
+
+    <string name="register_label_name">Nome:</string>
+    <string name="register_label_email">Email:</string>
+    <string name="register_label_phone">Phone Number:</string>
+    <string name="register_label_address">Address:</string>
+    <string name="register_label_allergy">Select Components:</string>
+
+    <string name="register_button_next">NEXT</string>
+    <string name="register_button_finish">FINISH</string>
+</resources>

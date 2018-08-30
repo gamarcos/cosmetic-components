@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/registerLabelComponent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_margin_vertical"
+        android:layout_marginEnd="@dimen/register_margin_horizontal"
+        android:layout_marginStart="@dimen/register_margin_horizontal"
+        android:text="@string/register_label_allergy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/registerSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/register_margin_horizontal"
+        android:layout_marginStart="@dimen/register_margin_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerLabelComponent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/registerSelectedComponents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/register_margin_vertical"
+        android:layout_marginTop="@dimen/register_margin_vertical"
+        android:layout_marginEnd="@dimen/register_margin_horizontal"
+        android:layout_marginStart="@dimen/register_margin_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/registerButtonFinish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerSpinner"
+        app:layout_constraintVertical_bias="1.0"/>
+
+    <Button
+        android:id="@+id/registerButtonFinish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_button_height"
+        android:layout_marginBottom="@dimen/register_margin_vertical"
+        android:layout_marginEnd="@dimen/register_margin_horizontal"
+        android:layout_marginStart="@dimen/register_margin_horizontal"
+        android:background="@color/colorPrimary"
+        android:text="@string/register_button_finish"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
